@@ -1,0 +1,67 @@
+
+.banner2 {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+
+
+.Banner2Container {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  background-color: #f9f9f9;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  max-width: 300px;
+  margin: 10px;
+}
+
+.itemNote {
+  font-size: 30px;
+  color: #ad343e;
+}
+
+.ss p:first-child {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.ss p:last-child {
+  font-size: 14px;
+  color: #555;
+}

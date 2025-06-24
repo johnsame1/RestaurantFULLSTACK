@@ -1,0 +1,66 @@
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column  ;
+    margin-top: 25px;
+}
+.services .servicesContainer     {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.services .servicesContainer .menuItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  text-align: center;
+  transition: 0.3s;
+  width: 280px;
+}
+
+.services .servicesContainer .menuItem:hover {
+  transform: scale(1.05);
+}
+
+.services .servicesContainer .menuItem .seviceImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+
+.services .menuItem .dishTitle {
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+ 
+}
+
+.services .menuItem .dishDescription {
+  font-size: 14px;
+  color: #555;
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+ margin: 0;
+  max-width: 70%;
+}
+
+
+@media (max-width: 400px) {
+  .services .menuItem {
+  width: 200px;
+  }
+}

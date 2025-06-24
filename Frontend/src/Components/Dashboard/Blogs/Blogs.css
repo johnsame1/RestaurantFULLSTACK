@@ -1,0 +1,113 @@
+.blogsSection .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.blogsSection .container .topic {
+  text-align: center;
+  width: 35%;
+}
+
+.blogsSection .container .blogs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 15px;
+}
+.blogsSection .container .blogs .blogItem {
+  max-width: 30%;
+  min-width: 300px;
+  flex: 0 0 250px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  border: 2px solid #f2f2f2;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.blogsSection .container .blogs .blogItem img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 20vh;
+  height: 20vh;
+  border-radius: 10px;
+}
+.blogsSection .container .blogs .blogItem .blogsTobic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+}
+
+.blogsSection .container .blogs .blogItem .blogsTobic .blogDescription,
+.blogdate {
+  width: 100%;
+  font-size: 14px;
+  justify-content: center;
+  display: flex;
+}
+.blogItem .dropdownWrapper {
+  position: absolute;
+  bottom: 0px;
+  right: -5px;
+  z-index: 10;
+}
+.blogItem .menuBtn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+.blogItem .dropdownMenu {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+  min-width: 120px;
+  padding: 5px 0;
+  border-radius: 31px;
+}
+.deleteAllBtn {
+  margin-bottom: 10px;
+  color: #efead8;
+  border-radius: 15px;
+  background-color: #dda15e;
+  border-color: transparent;
+}
+
+.blogItem .dropdownItem {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: black;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.blogItem .dropdownItem:hover {
+  background-color: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+  .blogsSection .container .filter {
+    gap: 10px;
+  }
+  .blogsSection .container .topic {
+    width: 70%;
+  }
+}

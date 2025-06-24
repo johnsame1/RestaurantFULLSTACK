@@ -1,0 +1,15 @@
+.Slidbarflex
+{
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    padding-top: 50px;
+}
+@media screen and (max-width: 1130px){
+
+    .Slidbarflex
+    {
+        flex-direction: column;
+    }
+
+}

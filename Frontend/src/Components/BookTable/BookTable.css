@@ -1,0 +1,156 @@
+.Book {
+  width: 100%;
+  height: 125vh;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 110px;
+  background-color: #f9f9f7;
+  position: relative;
+}
+.Book .BookTobic {
+  width: 35%;
+  margin-bottom: 120px;
+  height: 30vh;
+}
+.Book .BookContent {
+  width: 50%;
+  background-color: #ffff;
+  border-radius: 10px;
+  position: absolute;
+  top: 140px;
+  padding: 20px;
+}
+.Book .BookContent .BookContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  margin-left: 10px;
+}
+.Book .BookContent .BookContainer .date {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 49%;
+  align-items: start;
+}
+.Book .BookContent .BookContainer .datee {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+  align-items: start;
+}
+.Book .BookContent .BookContainer .date .input {
+  width: 90%;
+  border: 2px solid lightgray;
+  padding: 10px 10px;
+  border-radius: 25px;
+}
+.Book .BookContent .BookContainer .datee .input {
+  width: 95%;
+  border: 2px solid lightgray;
+  padding: 10px 10px;
+  border-radius: 50px;
+}
+.Book .BookContent .BookContainer .date h1 {
+  font-size: 20px;
+}
+
+.Book .BookContent .BookContainer .BookButton {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #ad343e;
+  border-radius: 25px;
+  border: 0 solid transparent;
+  color: #ffff;
+}
+
+.Book .BookContent .BookContainer .BookButton:hover {
+  background-color: #800000;
+}
+
+.Book .BookMap {
+  background-image: url('../../assyts/map.png');
+  width: 100%;
+  background-size: cover;
+  height: 80vh;
+}
+@media (max-width: 1024px) { 
+    .Book {
+      margin-top: 80px;
+    }
+  
+    .Book .BookContent {
+      width: 70%;
+      top: 100px;
+    }
+  
+    .Book .BookMap {
+      height: 60vh;
+    }
+  }
+  
+  @media (max-width: 768px) { 
+    .Book {
+      margin-top: 60px;
+    }
+  
+    .Book .BookTobic {
+      width: 60%;
+      margin-bottom: 80px;
+    }
+  
+    .Book .BookContent {
+      width: 80%;
+      top: 140px;
+      padding: 15px;
+    }
+  
+    .Book .BookContent .BookContainer {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+    }
+  
+    .Book .BookContent .BookContainer .date,
+    .Book .BookContent .BookContainer .datee {
+      width: 90%;
+    }
+  
+    .Book .BookContent .BookContainer .date .input,
+    .Book .BookContent .BookContainer .datee .input {
+      width: 90%;
+    }
+  
+    .Book .BookContent .BookContainer .BookButton {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .Book .BookMap {
+      height: 80vh;
+    }
+  }
+  
+  @media (max-width: 480px) { 
+    .Book {
+      margin-top: 40px;
+      height: 150vh;
+    }
+  
+    .Book .BookContent {
+      width: 95%;
+      top:220px;
+    }
+    .Book .BookMap {
+        height: 100vh;
+      }
+  
+   
+  }
+  

@@ -1,0 +1,177 @@
+.navbarLine {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+
+}
+
+.navbarLine .navbarLine-container {
+  width: 95%;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  color: white;
+  height: 5vh;
+}
+.navbarLine .navbarLine-container .nav-items{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.navbarLine .navbarLine-container .nav-links{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.NavBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  background:white;
+  
+}
+
+.NavBar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  padding-top: 5px;
+}
+.NavBar .container .logos .logo{
+display: flex;
+color: #474747;
+justify-content: center;
+align-items: center;}
+
+.NavBar .container .links a {
+  transition: color 0.5s ease, background 0.5s ease;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+
+.log{
+  display: none;
+    border: 0 ;
+  background-color: transparent;
+}
+.NavBar .container .links a:hover {
+  color: #ad343e;
+  background-color: #DBDFD0;
+  transition: color 0.5s ease, background 0.5s ease;
+
+}
+
+.NavBar .container .links {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin-left: 10rem;
+  align-items: center;
+  color: #ad343e;
+}
+.NavBar .container .Btns {
+  width: 20%;
+  justify-content: end;
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  align-items: center;
+  
+  
+}
+.NavBar .container .Btns .btnCreate {
+  border-radius: 20px;
+  padding: 10px 30px;
+  border: 0.1px solid black;
+  color: white;
+  background-color: transparent;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 15px;
+  transition: color 0.5s ease-in-out, background-color 0.5s ease;
+  color: black;
+  display: flex;
+  justify-content: center;
+
+}
+.NavBar .container .Btns .btnCreate:hover {
+  background-color: #ad343e;
+  color: white;
+  transition: 1s;
+}
+
+.NavBar .container .menu {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .NavBar {
+ width: 100%;
+  }
+  .NavBar .container .links {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    justify-content: flex-start;
+    gap: 20px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    z-index: 100;
+box-shadow: 0 4px 8px #474747 ;
+    padding: 30px;
+    border-radius: 15px;
+  }
+  .NavBar .container .links a {
+    color: black;
+    transition: color 0.5s ease-in-out;
+  }
+  .NavBar .container .links a:hover {
+    color: #ad343e;
+    transition: color 0.5s ease-in-out;
+  }
+
+  .NavBar .container .links.open {
+    display: flex;
+  }
+  .NavBar .container .menu {
+    display: flex;
+    z-index: 200;
+    border: 0;
+    background-color: transparent;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+
+  .NavBar .container .Btns {
+    display: none;
+  }
+.NavBar .container .links .Btn a .btnCreate , .log{
+
+display: flex !important; 
+}
+}
+
+@media (max-width: 450px) {
+  .navbarLine .navbarLine-container {
+font-size: 10px;
+}
+}

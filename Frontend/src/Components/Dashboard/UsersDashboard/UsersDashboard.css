@@ -1,0 +1,76 @@
+.Online-Users {
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  font-weight: bold;
+  color: #2a2a2a;
+  width: 90%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+.Online-Users .filter-buttons {
+  min-width: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.Online-Users .filter-buttons .filters {
+  padding: 5px 20px;
+  background-color: #6a994e;
+  color: white;
+  border-radius: 15px;
+  border-color: transparent;
+}
+.Online-Users .filter-buttons .filters.active {
+  background-color: #6a994e80;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+.Users-table {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.Users-table th,
+.Users-table td {
+  border: 0 solid #ddd;
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #2a2a2a;
+}
+
+.Users-table th {
+  font-weight: 400;
+  color: #a8a8a8;
+}
+
+.Users-table tr:hover {
+  background-color: #cdddec;
+  cursor: pointer;
+}
+.Users-table td {
+  font-weight: 400;
+}
+
+.Users-table .action h3 {
+  color: #ff0000;
+  cursor: pointer;
+}
+
+@media (max-width: 770px) {
+  .Online-Users {
+    overflow: scroll;
+    scrollbar-width: thin;
+  }
+}
+@media (max-width: 400px) {
+  .Online-Users .filter-buttons {
+    gap: 20px;
+  }
+}

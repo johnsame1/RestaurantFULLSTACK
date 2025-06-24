@@ -1,0 +1,41 @@
+.SingleBlogs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 110px;
+  background-color: #f9f9f7;
+  margin-bottom: 25px;
+}
+.SingleBlogs .container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SingleBlogs .Tobic {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.SingleBlogs .SingleImg {
+  width: 600px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 900px) {
+  .SingleBlogs .Tobic {
+    width: 100%;
+  }
+.SingleBlogs .SingleImg {
+max-width: 400px;
+}
+}
+@media (max-width: 400px) {
+.SingleBlogs .SingleImg {
+max-width: 300px;
+}
+}

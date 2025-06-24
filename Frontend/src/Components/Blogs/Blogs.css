@@ -1,0 +1,62 @@
+.blogsSections .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.blogsSections .container .topic {
+  text-align: center;
+  width: 35%;
+  margin-bottom: 20px;
+}
+
+.blogsSections .container .blogs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  gap: 15px;
+}
+.blogsSections .container .blogs .blogItem {
+  width: 20%;
+  min-width: 200px;
+  flex: 0 0 250px; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  cursor: pointer;
+}
+.blogsSections .container .blogs .blogItem img {
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 20vh;
+  height: 20vh;
+  width: fit-content;
+}
+.blogsSections .container .blogs .blogItem .blogsTobic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-width: 200px;
+}
+
+.blogsSections .container .blogs .blogItem .blogsTobic .blogDescription,
+.blogdate {
+  width: 80%;
+  font-size: 14px;
+  color: #414536;
+}
+
+@media (max-width: 768px) {
+  .blogsSections .container .filter {
+    gap: 10px;
+  }
+  .blogsSections .container .topic {
+    width: 70%;
+  }
+}

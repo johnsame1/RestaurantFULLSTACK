@@ -1,0 +1,95 @@
+.information {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  background-color: #f9f9f7;
+}
+.information .container {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.information .container .rightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.information .container .rightContainer .tobic {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.information .container .rightContainer .counter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.information .container .rightContainer .counter .count {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid azure;
+  width: 30%;
+}
+.information .container .rightContainer .counter .count .Satisfied {
+  font-size: 18px;
+}
+.information .container .leftContainer {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-direction: column;
+}
+.information .container .leftContainer img{
+width: 100%;
+}
+@media (max-width: 1000px) {
+  .information .container {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .information .container .rightContainer {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .information .container .rightContainer .tobic {
+    width: 60%;
+  }
+  .information .container .leftContainer img {
+    width: 85%;
+  }
+}
+@media (max-width: 768px) {
+    .information {
+        margin-top: 10px;
+    }
+    .information .container {
+        flex-direction: column;
+
+    }
+    .information .container .rightContainer .counter  {
+        justify-content: center;
+      }
+    .information .container .leftContainer img {
+        width: 60%;
+      }
+      .information .container .leftContainer {
+        justify-content: center;
+        align-items: center;
+      }
+}
