@@ -4,7 +4,7 @@ const AllowedTo = require('../middleWare/AllowedTo');
 const MenuRoutes = require('../controller/MenuController');
 const UserRole = require('../utiltes/UserRole');
 const VerifyToken = require('../middleWare/verifyToken');
-const photoUpload = require('../middleWare/PhotoUpload');
+const photoUpload = require('../middleWare/photoUpload');
 
 router
   .route('/')
