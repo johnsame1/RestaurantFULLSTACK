@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import './SingleBlogs.css';
-import axiosInstance from '../../axios/axios';
-import {BlogsContext} from '../context/BlogsContext'
+import axiosInstance from '../../axiosInstance/axiosInstance';
+import { BlogsContext } from '../context/BlogsContext';
 
 const SingleBlogs = () => {
-    const {blog} =useContext(BlogsContext)
-  
+  const { blog } = useContext(BlogsContext);
+
   const { id } = useParams();
   const [blogs, setBlog] = useState('');
   const token = localStorage.getItem('token');
@@ -19,7 +19,6 @@ const SingleBlogs = () => {
           },
         });
         setBlog(response.data.data.blog);
-
       } catch (error) {
         console.error('🟩 Er:', error);
       }
@@ -38,7 +37,11 @@ const SingleBlogs = () => {
               our customers
             </h1>
           </div>
-          <img className="SingleImg" src={blogs.image?.url||'url'} alt={"img"} />
+          <img
+            className="SingleImg"
+            src={blogs.image?.url || 'url'}
+            alt={'img'}
+          />
           <div className="SingleContent">
             <h1 className="SingleTitle">{blogs.title}</h1>
             <p className="SingleContent">{blogs.description}</p>
@@ -49,22 +52,23 @@ const SingleBlogs = () => {
         <div className="container">
           <div className="topic">
             <h1>Read More Articles</h1>
-           
           </div>
 
           <div className="blogs">
-          {blog.slice(0,4).map((blogsItem) => (
+            {blog.slice(0, 4).map((blogsItem) => (
               <div key={blogsItem.id} className="blogItem">
                 <Link to={`/blog/${blogsItem._id}`}>
-                  <img src={blogsItem.image?.url||"img"} alt={blogsItem.name} />
+                  <img
+                    src={blogsItem.image?.url || 'img'}
+                    alt={blogsItem.name}
+                  />
                   <div className="blogsTobic">
                     <h4 className="blogdate">{blogsItem.date}</h4>
                     <p className="blogDescription">{blogsItem.title}</p>
                   </div>
                 </Link>
-              </div>   
-                     ))}
-
+              </div>
+            ))}
           </div>
         </div>
       </div>

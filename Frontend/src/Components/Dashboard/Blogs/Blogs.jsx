@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import { useEffect, useState } from 'react';
-import axiosInstance from '../../../axios/axios';
+import axiosInstance from '../../../axiosInstance/axiosInstance';
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -13,7 +13,7 @@ const Blogs = () => {
       const responce = await axiosInstance.get('/api/Blog', {
         headers: { Authorization: `Bearer ${Token}` },
       });
-      
+
       setBlogs(responce.data.blog);
     } catch (err) {
       toast.error(err.response?.data?.message || 'Failed to get blog');
@@ -52,13 +52,9 @@ const Blogs = () => {
           {Array.isArray(blogs) &&
             blogs.map((blogsItem) => (
               <div key={blogsItem._id} className="blogItem">
-                <img
-                  src={blogsItem.image?.url||"img"}
-                  alt={blogsItem.name}
-                />
+                <img src={blogsItem.image?.url || 'img'} alt={blogsItem.name} />
                 <div className="blogsTobic">
-                  <div className="price">
-                  </div>
+                  <div className="price"></div>
                   <p className="blogDescription">{blogsItem.title}</p>
                 </div>
                 <div className="dropdownWrapper">

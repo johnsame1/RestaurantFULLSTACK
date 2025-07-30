@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react';
-import axiosInstance from '../../axios/axios';
+import axiosInstance from '../../axiosInstance/axiosInstance';
 
 export const UsersContext = createContext();
 
@@ -15,7 +15,7 @@ export const UsersProvider = ({ children }) => {
       const response = await axiosInstance.get('/api/dashboard/stats', {
         headers: { Authorization: `Bearer ${TOKEN}` },
       });
-      
+
       setUsers(response.data.data.users);
     } catch (error) {
       console.error('Error fetching users:', error);

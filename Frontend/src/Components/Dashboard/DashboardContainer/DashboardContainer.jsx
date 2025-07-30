@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './DashboardContainer.css';
-import axiosInstance from '../../../axios/axios';
+import axiosInstance from '../../../axiosInstance/axiosInstance';
 import { CiApple, CiBurger } from 'react-icons/ci';
 import { FaRegUser, FaUser, FaUtensils } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
@@ -33,7 +33,8 @@ function DashboardContainer() {
       const response = await axiosInstance.get('/api/Table', {
         headers: { Authorization: `Bearer ${TOKEN}` },
       });
-      const tableData = response.data?.data?.tables || response.data?.data || [];
+      const tableData =
+        response.data?.data?.tables || response.data?.data || [];
       setTables(tableData);
     } catch (error) {
       console.error('Error fetching table data:', error);
@@ -45,7 +46,13 @@ function DashboardContainer() {
     getTable();
   }, []);
 
-  const icons = [<FaRegUser />, <FaUser />, <CiBurger />, <CiApple />, <FaUtensils />];
+  const icons = [
+    <FaRegUser />,
+    <FaUser />,
+    <CiBurger />,
+    <CiApple />,
+    <FaUtensils />,
+  ];
   const bgColors = ['#CBF6F4', '#FFEEDC', '#FFE0E4', '#D3ECB7', '#D9D5F1'];
   const iconColors = ['#39A2AB', '#E88B23', '#FF6A75', '#47970E', '#8C6EFF'];
 

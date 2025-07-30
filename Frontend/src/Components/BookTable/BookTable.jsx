@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import './BookTable.css';
-import axiosInstance from '../../axios/axios'
-import { toast } from 'react-toastify'; 
-import 'react-toastify/dist/ReactToastify.css'; 
+import axiosInstance from '../../axiosInstance/axiosInstance';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function BookTable() {
-    const [userid, setUserId] = useState(null); 
+  const [userid, setUserId] = useState(null);
 
- const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState({
     Number_Of_Persons: '',
     Number_Of_Table: '',
     Booking_Date: '',
@@ -16,11 +16,11 @@ function BookTable() {
     Booking_Time: '',
     Name: '',
   });
-    const token = localStorage.getItem('token');
+  const token = localStorage.getItem('token');
 
-   useEffect(() => {
+  useEffect(() => {
     const userData = JSON.parse(localStorage.getItem('User'));
-    setUserId(userData?.iD); 
+    setUserId(userData?.iD);
   }, []);
 
   useEffect(() => {
@@ -30,8 +30,7 @@ function BookTable() {
         UserId: userid,
       }));
     }
-  }, [userid]); 
-
+  }, [userid]);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -41,15 +40,20 @@ function BookTable() {
     e.preventDefault();
 
     try {
-      const response = await axiosInstance.post('/api/Table/bookTable', formData,{
+      const response = await axiosInstance.post(
+        '/api/Table/bookTable',
+        formData,
+        {
           headers: {
-            Authorization: `Bearer ${token}`, 
-           } }
-      )
-      toast.success(`Table booked successfully! Thanks ${response.data.data.newTable.Name}`);
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+      toast.success(
+        `Table booked successfully! Thanks ${response.data.data.newTable.Name}`
+      );
     } catch (err) {
-            toast.error(err.response.data.message);
-
+      toast.error(err.response.data.message);
     }
   };
   return (
@@ -72,7 +76,7 @@ function BookTable() {
                   className="input"
                   type="date"
                   placeholder="Date"
-                  name='Booking_Date'
+                  name="Booking_Date"
                   onChange={handleChange}
                   required
                   value={formData.Booking_Date}
@@ -83,11 +87,10 @@ function BookTable() {
                 <input
                   className="input"
                   type="time"
-                  name='Booking_Time'
+                  name="Booking_Time"
                   placeholder="Time"
                   onChange={handleChange}
                   value={formData.Booking_Time}
-
                   required
                 />
               </div>
@@ -99,7 +102,7 @@ function BookTable() {
                   type="text"
                   onChange={handleChange}
                   value={formData.Name}
-                  name='Name'
+                  name="Name"
                   placeholder="Name"
                   required
                 />
@@ -111,7 +114,7 @@ function BookTable() {
                   onChange={handleChange}
                   value={formData.Number_Of_Table}
                   className="input"
-                  name='Number_Of_Table'
+                  name="Number_Of_Table"
                   type="text"
                   placeholder="Number of table"
                   required
@@ -123,7 +126,7 @@ function BookTable() {
                   onChange={handleChange}
                   className="input"
                   value={formData.Phone_Number}
-                  name='Phone_Number'
+                  name="Phone_Number"
                   type="tel"
                   placeholder="Phone Number"
                   required
@@ -136,12 +139,14 @@ function BookTable() {
                   className="input"
                   type="number"
                   value={formData.Number_Of_Persons}
-                  name='Number_Of_Persons'
+                  name="Number_Of_Persons"
                   placeholder="total person"
                   required
                 />
               </div>
-              <button className="BookButton" onClick={handleSubmit}>Book A Table</button>
+              <button className="BookButton" onClick={handleSubmit}>
+                Book A Table
+              </button>
             </form>
           </div>
         </div>
