@@ -1,21 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Banner2.css';
-import { FaPlay, FaRegStickyNote } from 'react-icons/fa';
+import {FaRegStickyNote } from 'react-icons/fa';
 import video from '../../../assyts/www.mp4';
 
-
 function Banner2() {
-
   return (
     <>
       <div className="banner2">
-        <video
-          className="background-video"
-          autoPlay
-          loop
-          muted
-          playsInline
-        >
+        <video className="background-video" autoPlay loop muted playsInline>
           <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>

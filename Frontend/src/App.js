@@ -1,5 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from 'react-router-dom';
 import Home from './Pages/Home';
 import NavBar from './Components/NavBar/NavBar.jsx';
 import Footer from './Components/Footer/Footer.jsx';
@@ -38,7 +43,10 @@ function App() {
           <Route path="/blog/:id" element={<SingleBlogs />} />
 
           <Route path="/dashboardadmin" element={<DashboardAdmin />}>
-            <Route index element={<Navigate to="dashboardcontainer" replace />} />
+            <Route
+              index
+              element={<Navigate to="dashboardcontainer" replace />}
+            />
             <Route path="dashboardcontainer" element={<DashboardContainer />} />
             <Route path="blogsdashboard" element={<BlogsDashboard />} />
             <Route path="UsersDashboard" element={<UsersDashboard />} />

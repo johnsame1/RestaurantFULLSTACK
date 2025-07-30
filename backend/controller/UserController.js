@@ -22,7 +22,7 @@ const GetById = AssyncWrapper(async (req, res, next) => {
 });
 
 const register = AssyncWrapper(async (req, res, next) => {
-  const { name, email, password, role, Subject, Massege } = req.body;
+  const { name, email, password, role } = req.body;
 
   if (!name) {
     const error = AppError.create('name is required', 404, httpStatus.ERROR);
