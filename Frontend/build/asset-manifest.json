@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8a5c37d9.css",
+    "main.js": "/static/js/main.65962262.js",
+    "static/js/453.a6fd8993.chunk.js": "/static/js/453.a6fd8993.chunk.js",
+    "static/media/www.mp4": "/static/media/www.a952711068e44373533a.mp4",
+    "static/media/map.png": "/static/media/map.ba94017952dcfc9f6f2a.png",
+    "static/media/banner2.jpg": "/static/media/banner2.f798708481c0c63ae6b0.jpg",
+    "static/media/handd.png": "/static/media/handd.91d06396487597a3e47f.png",
+    "static/media/Image.png": "/static/media/Image.19bf15738451098b817c.png",
+    "static/media/burger.png": "/static/media/burger.ff0665cae9971068fdc1.png",
+    "static/media/chef.png": "/static/media/chef.aab064221a6a88498e76.png",
+    "static/media/food1.png": "/static/media/food1.2dd56c5721442b58303e.png",
+    "static/media/hand.png": "/static/media/hand.8f340a5fb656f1e64cdd.png",
+    "static/media/friends.png": "/static/media/friends.e6f95bb118b3d500b675.png",
+    "static/media/birthday.png": "/static/media/birthday.666f8229c3d1df7d61d2.png",
+    "static/media/food2.png": "/static/media/food2.82042da0ed707b853a99.png",
+    "static/media/wedding.png": "/static/media/wedding.20b4205f6624f96c813c.png",
+    "static/media/slicepizza.png": "/static/media/slicepizza.f4161367b4bead36bdb4.png",
+    "static/media/ee.png": "/static/media/ee.0facca00603053587b07.png",
+    "static/media/glass.png": "/static/media/glass.72b0110751d0bc3b569b.png",
+    "static/media/frize.png": "/static/media/frize.d375fbfcd1ba8c91d0a3.png",
+    "static/media/cupcake.png": "/static/media/cupcake.96ad2abcfd52dbfde597.png",
+    "static/media/chicken.png": "/static/media/chicken.8e1f13393cd556625543.png",
+    "static/media/egg.jpg": "/static/media/egg.28ae78888600d3e4f04f.jpg",
+    "static/media/ella-footer.jpg": "/static/media/ella-footer.617f73de07d4fa51ba0f.jpg",
+    "static/media/ash-footer.jpg": "/static/media/ash-footer.77ba9ecabdd83a40f56a.jpg",
+    "static/media/potatos-footer.jpg": "/static/media/potatos-footer.10bd644e8715d1cbfce6.jpg",
+    "static/media/egg footer.jpg": "/static/media/egg footer.b9bc1dd96413e8e2c2e7.jpg",
+    "static/media/andy smith.png": "/static/media/andy smith.fefe2ba5d7760271f833.png",
+    "static/media/Sophire Robson.png": "/static/media/Sophire Robson.35669fb3482eb57cb1fa.png",
+    "static/media/mat cannon.png": "/static/media/mat cannon.735392b797675cfc4568.png",
+    "index.html": "/index.html",
+    "main.8a5c37d9.css.map": "/static/css/main.8a5c37d9.css.map",
+    "main.65962262.js.map": "/static/js/main.65962262.js.map",
+    "453.a6fd8993.chunk.js.map": "/static/js/453.a6fd8993.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a5c37d9.css",
+    "static/js/main.65962262.js"
+  ]
+}
