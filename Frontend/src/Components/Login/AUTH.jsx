@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axiosInstance from '../../axiosInstance/axiosInstance';
+import axiosInstance from '../../axiosService/axiosInstance';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 const AUTH = () => {

@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import './SingleBlogs.css';
-import axiosInstance from '../../axiosInstance/axiosInstance';
+import axiosInstance from '../../axiosService/axiosInstance';
 import { BlogsContext } from '../context/BlogsContext';
 
 const SingleBlogs = () => {

@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react';
-import axiosInstance from '../../axiosInstance/axiosInstance';
+import axiosInstance from '../../axiosService/axiosInstance';
 const BlogsContext = createContext();
 
 const BlogsProvider = ({ children }) => {

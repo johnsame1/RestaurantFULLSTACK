@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './DashboardContainer.css';
-import axiosInstance from '../../../axiosInstance/axiosInstance';
+import axiosInstance from '../../../axiosService/axiosInstance';
 import { CiApple, CiBurger } from 'react-icons/ci';
 import { FaRegUser, FaUser, FaUtensils } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
