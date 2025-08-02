@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './TableUser.css';
 import { RiCheckLine } from 'react-icons/ri';
 import { MdCancel } from 'react-icons/md';
-import axiosInstance from '../../../axiosService/axiosInstance';
+import axiosInstance from '../../../axiosInstance';
 import { toast } from 'react-toastify';
 
 function Requestsusers() {

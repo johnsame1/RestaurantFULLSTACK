@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import { useEffect, useState } from 'react';
-import axiosInstance from '../../../axiosService/axiosInstance';
+import axiosInstance from '../../../axiosInstance';
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);

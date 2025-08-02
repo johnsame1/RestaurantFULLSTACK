@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react';
-import axiosInstance from '../../axiosService/axiosInstance';
+import axiosInstance from '../../axiosInstance';
 import { toast } from 'react-toastify';
 const MenuContext = createContext();
 const MenuProvider = ({ children }) => {

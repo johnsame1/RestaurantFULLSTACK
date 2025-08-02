@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './BookTable.css';
-import axiosInstance from '../../axiosService/axiosInstance';
+import axiosInstance from '../../axiosInstance';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
