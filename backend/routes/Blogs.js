@@ -19,7 +19,6 @@ router
 router
   .route('/:blogId')
   .get(
-    VerifyToken,
     BlogRoutes.GetById
   )
   .patch(
