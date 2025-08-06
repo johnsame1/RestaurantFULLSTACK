@@ -20,7 +20,6 @@ router
   .route('/:blogId')
   .get(
     VerifyToken,
-    AllowedTo(UserRole.Admin, UserRole.User),
     BlogRoutes.GetById
   )
   .patch(
